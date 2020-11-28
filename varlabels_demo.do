@@ -10,6 +10,6 @@
 	sysuse auto.dta, clear
 
 	foreach i in trunk weight length {
-	hist `i', title("`: variable label `i''") scheme(s1mono)
-	graph export "`i'.png", as(png) replace
+		hist `i', title("`: variable label `i''") scheme(s1mono)
+		graph export "`i'.png", as(png) replace
 	}
